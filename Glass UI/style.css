@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins, sans-serif;
+}
+h1{
+    color: rgb(11, 164, 252);
+    font-weight: 600;
+}
+h2{
+    font-weight: 500;
+    color: rgb(9, 116, 255);
+}
+p{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.63);
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right top,#8ad1c3, #63d6e7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.glass{
+    width: 60%;
+    min-height: 80vh;
+    background-color: white;
+    background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.664),
+    #63d5e78f);
+    border-radius: 2rem;
+    backdrop-filter: blur(5px);
+    display: flex;
+    z-index: 2;
+    box-shadow: 6px 6px 20px #406b72b7;
+}
+
+.circle1,.circle2{
+    width:20rem;
+    height: 20rem;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)
+  );
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.circle1{
+    top: 5%;
+    right: 10%;
+}
+.circle2{
+    bottom: 5%;
+    left: 5%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    padding:20px 3px;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+    border-radius: 2rem;
+}
+
+.links{
+    margin-top: 2rem;
+}
+.link{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0rem;
+    text-align: center;
+    align-items: center;
+}
+.user p , .links p{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.616);
+}
+.pro{
+    width: 25vh;
+    height: 12vh;
+    background: linear-gradient(to right top,#8ad1c3, #63d6e7);
+    border-radius: 1rem;
+    display: flex;
+    position: relative;
+    margin: 0px 4px;
+}
+.pro .imgage img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -10px;
+    right: 10px;
+}
+.pro p{
+    margin:2px 10px;
+    padding: 2px 2px;
+    width: 40%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+/* Game */
+
+.Games{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.status input{
+    border-radius: 2rem;
+    height: 23px;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.3),
+    rgba(255, 255, 255, 0.7));
+    border: none;
+}
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card1,.card2,.card3{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 30%;
+    background: linear-gradient(to right top,
+    rgba(140, 233, 236, 0.3),
+    rgba(8, 227, 235, 0.582));
+    margin-top: 30px;
+    padding: .6rem 1rem;
+    border-radius: 2rem;
+    box-shadow:6px 6px 20px rgba(122, 122, 122, 0.512);
+}
+.cards .card-info {
+    width: 100%;
+    margin-left: 20px;
+}
+.cards .card-info p{
+    margin-top: 10px;
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cards .progress{
+    position: relative;
+    width: 100%;
+    height: 24px;
+    border-radius: 2rem;
+    margin-top: 9px;
+    background:  rgba(8, 227, 235, 0.982);
+    position: relative;
+    overflow: hidden;
+}
+.card1 .progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 244, 244, 0.808);
+    position: absolute;
+    left: 60%;
+}
+.card2 .progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 244, 244, 0.808);
+    position: absolute;
+    left: 80%;
+}
+.card3 .progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 244, 244, 0.808);
+    position: absolute;
+    left: 40%;
+}
+.cards .percentage{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.664);
+}
