@@ -1,3 +1,3 @@
 # Glassmorphism-UI
 
-![]<GlassUI\images/Screenshot.png>
+![]<Glass%20UI/images/Screenshot.png>
